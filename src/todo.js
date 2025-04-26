@@ -28,3 +28,5 @@ class toDo {
     }
 
 }
+
+export {toDo}
