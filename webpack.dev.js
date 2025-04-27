@@ -1,7 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { merge } = require('webpack-merge');
+const common = require('./webpack.common.js');
 
-module.exports = {
+module.exports = merge(common, {
   entry: './src/app.js',
   output: {
     filename: 'bundle.js',
@@ -20,4 +22,4 @@ module.exports = {
       filename: 'index.html'
     })
   ]
-};
+});
