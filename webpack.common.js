@@ -27,5 +27,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+    new HtmlWebpackPlugin({
+      template: './src/project.html',
+    }),
   ],
 };
