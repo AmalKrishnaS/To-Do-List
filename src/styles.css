@@ -26,3 +26,45 @@ body {
     border: 1px solid black;
     border-radius: 8px;
 }
+
+.todo-dialog {
+    width: 320px;
+}
+
+.todo {
+    width: 300px;
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.duedate-priority {
+    display: flex;
+    flex-direction: row;
+}
+
+.duedate-priority input,
+.duedate-priority select {
+    width: 150px;
+}
+
+.todo-buttons-container {
+    display: flex;
+    gap: 5px;
+    justify-content: end;
+    margin: 2px;
+}
+
+.title input,
+.description textarea {
+    width: 313px;
+    border: 1px solid black;
+}
