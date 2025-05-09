@@ -56,6 +56,10 @@ body {
     width: 150px;
 }
 
+.duedate-priority select {
+    height: 21px;
+}
+
 .todo-buttons-container {
     display: flex;
     gap: 5px;
