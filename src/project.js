@@ -8,4 +8,8 @@ class Project {
     }
 }
 
-export {Project}
+function createProject() {
+    return new Project('Default');
+}
+
+export {Project, createProject};
