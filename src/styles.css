@@ -12,20 +12,7 @@ body {
     margin:16px;
 }
 
-.projects-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
-}
-
-.add-new-project {
-    width: 100px;
-    height: 30px;
-    padding: 4px;
-    border: 1px solid black;
-    border-radius: 8px;
-}
+/* Dialog */
 
 .todo-dialog {
     width: 320px;
@@ -71,4 +58,20 @@ body {
 .description textarea {
     width: 313px;
     border: 1px solid black;
+}
+
+/* page layout */
+
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-areas: 'sidebar main';
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
 }

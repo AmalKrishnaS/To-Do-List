@@ -6,14 +6,43 @@
     <title>ToDo - Your to do list</title>
 </head>
 <body>
-    <h2 class="intro-heading"></h2>
-    
-    <div class="projects-container">
-        <div class="projects-header">
-            <h3>Your Projects</h3>
-            <button class="add-new-project">New Project</button>
-        </div>
-        <div class="projects"></div>
+    <div class="container">
+        <div class="sidebar"></div>
+        <div class="main"></div>
     </div>
+        
+    <dialog class="todo-dialog">
+        <form action="" class="todo-form">
+            <div class="title wrapper">
+                <label for="title">Title</label>
+                <input class="todo title" name="title" id="title" type="text" >
+            </div>
+            <div class="description wrapper">
+                <label for="description">Description</label>
+                <textarea class="todo description" name="description" id="description"></textarea>
+            </div>
+            <div class="duedate-priority wrapper">
+                <div class="duedate">
+                    <label for="duedate">Due Date</label>
+                    <input class="todo duedate" name="duedate" type="date" id="duedate">
+                </div>
+
+                <div class="priority">
+                    <label for="priority">Priority</label>
+                    <select class="todo priority" name="priority" id="priority">
+                        <option value="">Priority</option>
+                        <option value="High">High</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Low">Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="todo-buttons-container">
+                <button class="button cancel-todo-button">Back</button>
+                <button class="button add-todo-button">Add</button>
+            </div>
+        </form>
+    </dialog>
 </body>
 </html>
