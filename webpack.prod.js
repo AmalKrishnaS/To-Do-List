@@ -16,9 +16,5 @@ module.exports = merge(common, {
       template: './src/index.html',
       filename: 'index.html'
     }),
-    new HtmlWebpackPlugin({
-      template: './src/project.html',
-      filename: 'project.html'
-    }),
   ]
 });
