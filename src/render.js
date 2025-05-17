@@ -1,5 +1,12 @@
-const introHeading = document.querySelector('.intro-heading');
 const projectsContainer = document.querySelector('.projects-container');
-const projects = document.querySelector('.projects');
 
-export function displayProjects() {}
+export function displayProjects(projectsArray) {
+    projectsArray.forEach(element => {
+        const p = document.createElement('p');
+        const a = document.createElement('a');
+
+        a.textContent = element.name;
+        p.appendChild(a);
+        projectsContainer.appendChild(p);
+    });
+}
