@@ -75,3 +75,28 @@ body {
 .main {
   grid-area: main;
 }
+
+/* sidebar */
+
+.app-name {
+    margin: 0 0 16px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.projects-container p {
+    margin: 0;
+    padding: 4px;
+    font-size: 20px;
+}
+
+.projects-container a {
+    color: black;
+    text-decoration: none;
+}
