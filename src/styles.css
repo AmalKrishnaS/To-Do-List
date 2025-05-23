@@ -9,7 +9,8 @@ html, body {
 }
 
 body {
-    margin:16px;
+    margin:0;
+    background-color: black;
 }
 
 /* Dialog */
@@ -66,20 +67,26 @@ body {
   display: grid;
   grid-template-columns: 200px 1fr;
   grid-template-areas: 'sidebar main';
+  gap: 2px;
+  background-color: gray;
+  height: 100vh;
+  margin: 0 200px;
 }
 
 .sidebar {
   grid-area: sidebar;
+  background-color: white;
 }
 
 .main {
   grid-area: main;
+  background-color: white;
 }
 
 /* sidebar */
 
 .app-name {
-    margin: 0 0 16px 0;
+    margin: 16px;
     font-size: 32px;
     font-weight: bold;
 }
@@ -88,6 +95,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    margin-left: 16px;
 }
 
 .projects-container p {
@@ -99,4 +107,46 @@ body {
 .projects-container a {
     color: black;
     text-decoration: none;
+}
+
+/* Main */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+}
+
+.add-todo {
+    font-size: 1em;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 4px 12px;
+}
+
+.todo-container {
+    margin: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-container p,
+.todo-container h3{
+    margin: 16px 0 16px 16px;
+}
+
+.priority {
+    margin-top: 16px;
+    margin-right: 16px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
 }
