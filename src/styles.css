@@ -130,14 +130,14 @@ body {
     padding: 4px 12px;
 }
 
-.todo-container {
-    margin: 16px;
+.todo {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.todo-container p,
-.todo-container h3{
+.todo p,
+.todo h3{
     margin: 16px 0 16px 16px;
 }
 

@@ -35,6 +35,9 @@ export function displayTodos(project) {
 
     project.todos.forEach(element => {
 
+        const todo = document.createElement('div');
+        todo.classList.add('todo');
+
         const todoInfo = document.createElement('div');
         todoInfo.classList.add('todo-info');
 
@@ -57,7 +60,9 @@ export function displayTodos(project) {
         priorityContainer.appendChild(priority);
         todoInfo.append(todoHeading, para1, para2);
 
-        todoContainer.append(todoInfo, priorityContainer);
+        todo.append(todoInfo, priorityContainer);
+
+        todoContainer.append(todo);
 
         main.appendChild(todoContainer);
 
