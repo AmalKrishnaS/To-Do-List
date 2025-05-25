@@ -85,6 +85,25 @@ body {
 
 /* sidebar */
 
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-project-button-container {
+    display: flex;
+    align-items: center;
+}
+
+.add-project {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
 .app-name {
     margin: 16px;
     font-size: 32px;
