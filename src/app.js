@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
         displayProjects([defaultProject]);
     } 
     else {
-        const defaultProject = JSON.parse(localStorage.getItem('projects'))[0];
-        displayTodos(defaultProject);
+        const defaultProject = JSON.parse(localStorage.getItem('projects'));
+        displayProjects(defaultProject);
+        displayTodos(defaultProject[0]);
     }
 })
