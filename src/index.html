@@ -22,40 +22,55 @@
         <div class="main">
             <div class="header"></div>
         </div>
+
+        <dialog class="todo-dialog">
+            <form action="" class="todo-form">
+                <div class="title wrapper">
+                    <label for="title">Title</label>
+                    <input class="todo title" name="title" id="title" type="text" >
+                </div>
+                <div class="description wrapper">
+                    <label for="description">Description</label>
+                    <textarea class="todo description" name="description" id="description"></textarea>
+                </div>
+                <div class="duedate-priority wrapper">
+                    <div class="duedate">
+                        <label for="duedate">Due Date</label>
+                        <input class="todo duedate" name="duedate" type="date" id="duedate">
+                    </div>
+
+                    <div class="priority">
+                        <label for="priority">Priority</label>
+                        <select class="todo priority" name="priority" id="priority">
+                            <option value="">Priority</option>
+                            <option value="High">High</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Low">Low</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="todo-buttons-container">
+                    <button class="button cancel-todo-button">Back</button>
+                    <button class="button add-todo-button">Add</button>
+                </div>
+            </form>
+        </dialog>
+
+        <dialog class="project-dialog">
+            <form action="" class="project-form">
+                <div class="name-wrapper">
+                        <label for="projectName">Project name</label>
+                        <input type="text" name="projectName" id="projectName">
+                </div>
+
+                <div class="project-button-wrapper">
+                    <button class="cancel-project-button">Cancel</button>
+                    <button class="create-project-button">Create</button>
+                </div>
+            </form>
+        </dialog>
     </div>
         
-    <dialog class="todo-dialog">
-        <form action="" class="todo-form">
-            <div class="title wrapper">
-                <label for="title">Title</label>
-                <input class="todo title" name="title" id="title" type="text" >
-            </div>
-            <div class="description wrapper">
-                <label for="description">Description</label>
-                <textarea class="todo description" name="description" id="description"></textarea>
-            </div>
-            <div class="duedate-priority wrapper">
-                <div class="duedate">
-                    <label for="duedate">Due Date</label>
-                    <input class="todo duedate" name="duedate" type="date" id="duedate">
-                </div>
-
-                <div class="priority">
-                    <label for="priority">Priority</label>
-                    <select class="todo priority" name="priority" id="priority">
-                        <option value="">Priority</option>
-                        <option value="High">High</option>
-                        <option value="Medium">Medium</option>
-                        <option value="Low">Low</option>
-                    </select>
-                </div>
-            </div>
-
-            <div class="todo-buttons-container">
-                <button class="button cancel-todo-button">Back</button>
-                <button class="button add-todo-button">Add</button>
-            </div>
-        </form>
-    </dialog>
 </body>
 </html>
