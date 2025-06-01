@@ -1,5 +1,5 @@
 import "./styles.css";
-import { createProject } from "./project";
+import { createProject, Project } from "./project";
 import { displayProjects } from "./render";
 import {displayTodos} from "./render.js";
 
@@ -13,9 +13,11 @@ function setProject(projects) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const projects = getProject();
+    let projects = getProject();
     if (projects === null) {
-        projects.push({name:'Default', todos: {}})
+        projects = [];
+        projects.push(new Project('default'));
+        setProject(projects);
         displayProjects(projects[0]);
     } 
     else {
