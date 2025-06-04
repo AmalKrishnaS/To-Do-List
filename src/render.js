@@ -15,6 +15,8 @@ export function displayTodos(project) {
     const main = document.querySelector('.main');
 
     const header = document.querySelector('.header');
+    header.setAttribute("data-id", project.name);
+
     const heading = document.createElement('h2');
     heading.classList.add('project-heading');
     heading.textContent = project.name;
